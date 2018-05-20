@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_login_shape">
+
+        <ImageView
+            android:id="@+id/splashBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splash_bg" />
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/container_layout_margin"
+            >
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_centerInParent="true"
+                android:text="@string/splash_welcome_txt"
+                android:id="@+id/lableWelcom"
+                android:textColor="@color/orange"
+                android:textStyle="normal"
+                />
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:fillViewport="true"
+                android:layout_below="@+id/lableWelcom"
+                >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                >
+                <TextView
+                    style="@style/LabelStyle"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/who_are_you"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_users"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginTop="55dp"
+
+                    >
+                    <RadioButton
+                        android:id="@+id/rb_officer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_m_officer"
+                        style="@style/LabelStyle"
+                        android:textColor="@color/primary_txt"
+                        android:layout_marginBottom="5dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_client"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_m_client"
+                        style="@style/LabelStyle"
+                        android:textColor="@color/primary_txt"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:textColor="#E91E63"
+                    android:minWidth="@dimen/splash_btn_width"
+                    android:onClick="login"
+                    android:text="@string/login_btn_label"
+                    android:textSize="14sp"
+                    android:background="@color/edit_text_bg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignBottom="@+id/rg_users"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_get_started"
+                    style="@style/SolidButtonStyle"
+                    android:layout_alignParentEnd="true"
+                    android:minWidth="@dimen/splash_btn_width"
+                    android:onClick="getStarted"
+                    android:text="@string/get_started_btn_label"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignBottom="@+id/rg_users"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    />
+            </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</layout>

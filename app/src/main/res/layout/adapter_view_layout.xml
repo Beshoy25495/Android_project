@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/new_login_shape"
+    android:weightSum="100">
+
+    <TextView
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Number"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/textView1"
+        android:layout_weight="66.6"
+        style="@style/SolidButtonStyle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:gravity="center"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textView2"
+            style="@style/StrokeButtonStyle"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="Cost"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            style="@style/StrokeButtonStyle"/>
+        <TextView
+            android:gravity="center"
+            android:text="Street"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textView4"
+            style="@style/StrokeButtonStyle"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="CID"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView2"
+            style="@style/StrokeButtonStyle"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

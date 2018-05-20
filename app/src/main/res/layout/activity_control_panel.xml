@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new_login_shape"
+    tools:context="com.example.tomas.androidgraduationproject.ControlPanel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/car_login"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/name"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="22sp"
+                android:layout_margin="35dp"
+                android:textColor="@color/colorAccent"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/id"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="22sp"
+                android:layout_margin="35dp"
+                android:textColor="@color/colorAccent"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shape"
+            android:paddingRight="20dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/camera"
+            android:onClick="camera"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shape"
+            android:padding="25sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/search"
+            android:onClick="search"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shape"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="35dp"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:paddingStart="35dp" android:paddingEnd="25dp"
+            android:onClick="ADD"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shape"
+            android:paddingRight="10dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/show_all"
+            android:paddingEnd="10dp" android:paddingStart="15dp"
+            android:onClick="SearchAll"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shape"
+            android:padding="25sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="@string/modify"
+            android:onClick="Modify"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_shape"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="30dp"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:paddingEnd="25dp" android:paddingStart="30dp"
+            android:onClick="Delete"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
