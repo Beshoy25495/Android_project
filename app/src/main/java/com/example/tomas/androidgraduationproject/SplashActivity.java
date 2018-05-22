@@ -72,15 +72,19 @@ public class SplashActivity extends AppCompatActivity {
 
        if(theChoice.equalsIgnoreCase("officer"))
         {
+           /*
             Intent loginUser = new Intent(this,LoginActivity.class) ;
             loginUser.putExtra("theChoice" , theChoice);
             startActivity(loginUser);
+            */
         }
         else  if(theChoice.equalsIgnoreCase("client"))
         {
+            /*
             Intent loginUser = new Intent(this,LoginActivity.class) ;
             loginUser.putExtra("theChoice" , theChoice);
             startActivity(loginUser);
+            */
         }
 
     }
@@ -94,15 +98,19 @@ public class SplashActivity extends AppCompatActivity {
 
        if(theChoice.equalsIgnoreCase("officer"))
         {
+           /*
             Intent signUser = new Intent(this,RegisterActivity.class) ;
             signUser.putExtra("theChoice" , theChoice);
             startActivity(signUser);
+            */
         }
         else  if(theChoice.equalsIgnoreCase("client"))
         {
+            /*
             Intent signUser = new Intent(this,RegisterActivity.class) ;
             signUser.putExtra("theChoice" , theChoice);
             startActivity(signUser);
+            */
         }
 
 
